@@ -1,11 +1,17 @@
 
-var data = {
+var sentence1 = {
   lines:["Ni mutil guapoa naiz","I am a beautiful boy"],
   arrows:[["Ni","I"],["mutil","boy"],["guapoa","beautiful"],["naiz","am"]]
 }
 
+var sentence2 = {
+  lines:["Nire etxea gorria da","My house is red"],
+  arrows:[["Nire","My"],["etxea","house"],["gorria","red"],["da","is"]]
+}
+
 window.onload=function(){
-  createLines("#container",data)
+  createLines("#container",sentence1);
+  createLines("#container2",sentence2);
 };
 
 function createLines(selector, data){
@@ -105,7 +111,7 @@ function createLines(selector, data){
       .attr("y1",wordsInLine[0].y+wordsInLine[0].height)
       .attr("x2",wordsInLine[0].x+wordsInLine[0].width)
       .attr("y2",wordsInLine[0].y+wordsInLine[0].height)
-      .attr("stroke-width", 4)
+      .attr("stroke-width", Math.max(1,Math.round(lineHeight/30)))
       .attr("stroke", color(i));
 
     canvas
