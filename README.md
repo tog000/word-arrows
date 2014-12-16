@@ -5,4 +5,6 @@ This is a little project crafted in a couple of hours that uses
 In learning languages, I find it useful to know the function of words in
 the context of a language I already speak.
 
+Follow link for demo: [http://demos.tog000.io/word-arrows/](http://demos.tog000.io/word-arrows/)
+
 ![Example](https://raw.githubusercontent.com/tog000/word-arrows/master/example.png)
